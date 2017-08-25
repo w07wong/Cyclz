@@ -1,0 +1,48 @@
+<html>
+    <body>     
+        <div class="container-fluid">  
+                <h2>Floor 2</h2>   
+                <div class="row">             
+                    <div class="col-sm-6">                            
+                        <a onclick="showWasherCalendar()"><h3>Washers</h3></a>
+                        <div class="washers">   
+                            <a onclick="showWasherCalendar()">
+                                <img src="./assets/images/washer.png" alt="washer" width="100" height="100">
+                            </a>         
+                            <a onclick="showWasherCalendar()">
+                                <img src="./assets/images/washer.png" alt="washer" width="100" height="100">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">                            
+                        <a href=""><h3>Dryers</h3></a>
+                        <div class="dryers-top">  
+                            <a href="">
+                                <img src="./assets/images/dryer.png" alt="dryer" width="100" height="100">
+                            </a> 
+                            <a href="">
+                                <img src="./assets/images/dryer.png" alt="dryer" width="100" height="100">
+                            </a> 
+                        </div>
+                        <div class="dryers-bottom">
+                            <a href="">
+                                <img src="./assets/images/dryer.png" alt="dryer" width="100" height="100">
+                            </a> 
+                            <a href="">
+                                <img src="./assets/images/dryer.png" alt="dryer" width="100" height="100">
+                            </a>        
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <script>
+                function showWasherCalendar() {
+                    document.getElementById("washer-calendar").style.visibility = "visible";
+                }
+                </script>
+            <div id="washer-calendar" style="visibility: hidden; position: absolute; left: 0px; top: 0px; border: none; width:100%; height:100%;">
+                <iframe src="https://calendar.google.com/calendar/selfsched?sstoken=UU9JQTNsTGtBSU16fGRlZmF1bHR8ODUxZTBlMzAxZDA2MDhiNDY1MTNlNmY2ZTQ1MzM2ZDA" scrolling="no" style="height: 100%; border: 0px none; width: 100%; margin-top: -227px; ">
+                </iframe>
+            </div>
+    </body>
+</html>
